@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Login y Registro - Hablando Global</title>
+
+	<!-- Fuentes y estilos -->
+	<link href="https://fonts.googleapis.com/css?family=Raleway|Ubuntu" rel="stylesheet" />
+	<link rel="stylesheet" href="css/estilos_login.css" />
+	<link rel="stylesheet" href="css/estilos.css" />
+</head>
+
+<body>
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Educación Global</title>
+	<link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+<!-- Encabezado -->
+<nav>
+	<div id="page">
+		<!-- Navegación profesional -->
+		<nav class="fh5co-nav">
+			<div class="top-menu">
+				<div class="container">
+
+					<div class="col-xs-2">
+						<div id="fh5co-logo">
+							<a href="index.html">
+								<img src="images/logo.png" alt="Logo Hablando Global" class="logo-img">
+								<strong>Hablando Global<span>.</span></strong>
+							</a>
+						</div>
+					</div>
+
+					<div class="col-xs-10 text-right menu-1">
+						<ul>
+							<li class="active"><a href="index.html">Volver al Home</a></li>
+						</ul>
+					</div>
+
+				</div>
+			</div>
+		</nav>
+	</div>
+
+</nav>
+
+<!-- Login y Registro -->
+<main class="contenedor-formularios">
+	<!-- Inputs radio ocultos -->
+	<input type="radio" name="tab" id="tab-login" checked>
+	<input type="radio" name="tab" id="tab-registro">
+
+	<!-- Etiquetas como tabs -->
+	<ul class="contenedor-tabs">
+		<li><label for="tab-login">Iniciar Sesión</label></li>
+		<li><label for="tab-registro">Registrarse</label></li>
+	</ul>
+
+	<!-- Formularios -->
+	<div class="contenido-tab">
+		<!-- Login -->
+		<div class="formulario" id="contenido-login">
+			<h2>Iniciar Sesión</h2>
+			<form>
+				<label>Usuario</label>
+				<input type="text" required>
+				<label>Contraseña</label>
+				<input type="password" required>
+				<button type="submit">Entrar</button>
+			</form>
+		</div>
+
+		<!-- Registro -->
+		<div class="formulario" id="contenido-registro">
+			<h2>Registrarse</h2>
+			<form>
+				<label>Nombre</label>
+				<input type="text" required>
+				<label>Apellido</label>
+				<input type="text" required>
+				<label>Usuario</label>
+				<input type="text" required>
+				<label>Email</label>
+				<input type="email" required>
+				<label>Contraseña</label>
+				<input type="password" required>
+				<label>Repetir Contraseña</label>
+				<input type="password" required>
+				<button type="submit">Crear Cuenta</button>
+			</form>
+		</div>
+	</div>
+</main>
+
+</body>
+</html>
