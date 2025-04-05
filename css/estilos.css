@@ -318,6 +318,11 @@ footer {
   margin: auto;
 }
 
+.inicio{
+  text-decoration: none;
+  color: white;
+}
+
 .funciona-item {
   flex: 1 1 200px;
   max-width: 250px;
