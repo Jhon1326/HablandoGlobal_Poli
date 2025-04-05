@@ -13,6 +13,10 @@ body {
     color: white;
 }
 
+.inicio{
+    text-decoration: none;
+}
+
 .content {
     width: 85%;
     padding: 20px;
