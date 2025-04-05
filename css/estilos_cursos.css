@@ -5,14 +5,12 @@ body {
     display: flex;
 }
 .sidebar {
+    text-decoration: transparent;
+    color: white;
     width: 15%;
     background-color: #2E5743;
     padding: 20px;
     height: 100vh;
-}
-.home{
-    text-decoration: transparent;
-    color: white;
 }
 .content {
     width: 85%;
