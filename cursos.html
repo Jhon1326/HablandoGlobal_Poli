@@ -1,105 +1,87 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Login y Registro - Hablando Global</title>
-
-	<!-- Fuentes y estilos -->
-	<link href="https://fonts.googleapis.com/css?family=Raleway|Ubuntu" rel="stylesheet" />
-	<link rel="stylesheet" href="css/estilos_login.css" />
-	<link rel="stylesheet" href="css/estilos.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        .sidebar {
+            width: 15%;
+            background-color: #2E5743;
+            padding: 20px;
+            height: 100vh;
+            color: white;
+        }
+        .content {
+            width: 85%;
+            padding: 20px;
+        }
+        .courses {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .course {
+            border: 1px solid black;
+            padding: 15px;
+            background-color: #E0E4E1;
+        }
+        .progress-bar {
+            width: 100%;
+            background-color: #ccc;
+            height: 8px;
+            margin-top: 10px;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+        .progress {
+            height: 100%;
+            background-color: #1E5D3B;
+        }
+    </style>
 </head>
-
 <body>
-
-<!DOCTYPE html>
-<html lang="es">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Educación Global</title>
-	<link rel="stylesheet" href="css/estilos.css">
-</head>
-<body>
-
-<!-- Encabezado -->
-<nav>
-	<div id="page">
-		<!-- Navegación profesional -->
-		<nav class="fh5co-nav">
-			<div class="top-menu">
-				<div class="container">
-
-					<div class="col-xs-2">
-						<div id="fh5co-logo">
-							<a href="index.html">
-								<img src="images/logo.png" alt="Logo Hablando Global" class="logo-img">
-								<strong>Hablando Global<span>.</span></strong>
-							</a>
-						</div>
-					</div>
-
-					<div class="col-xs-10 text-right menu-1">
-						<ul>
-							<li class="active"><a href="index.html">Volver al Home</a></li>
-						</ul>
-					</div>
-
-				</div>
-			</div>
-		</nav>
-	</div>
-
-</nav>
-
-<!-- Login y Registro -->
-<main class="contenedor-formularios">
-	<!-- Inputs radio ocultos -->
-	<input type="radio" name="tab" id="tab-login" checked>
-	<input type="radio" name="tab" id="tab-registro">
-
-	<!-- Etiquetas como tabs -->
-	<ul class="contenedor-tabs">
-		<li><label for="tab-login">Iniciar Sesión</label></li>
-		<li><label for="tab-registro">Registrarse</label></li>
-	</ul>
-
-	<!-- Formularios -->
-	<div class="contenido-tab">
-		<!-- Login -->
-		<div class="formulario" id="contenido-login">
-			<h2>Iniciar Sesión</h2>
-			<form>
-				<label>Usuario</label>
-				<input type="text" required>
-				<label>Contraseña</label>
-				<input type="password" required>
-				<button type="submit">Entrar</button>
-			</form>
-		</div>
-
-		<!-- Registro -->
-		<div class="formulario" id="contenido-registro">
-			<h2>Registrarse</h2>
-			<form>
-				<label>Nombre</label>
-				<input type="text" required>
-				<label>Apellido</label>
-				<input type="text" required>
-				<label>Usuario</label>
-				<input type="text" required>
-				<label>Email</label>
-				<input type="email" required>
-				<label>Contraseña</label>
-				<input type="password" required>
-				<label>Repetir Contraseña</label>
-				<input type="password" required>
-				<button type="submit">Crear Cuenta</button>
-			</form>
-		</div>
-	</div>
-</main>
-
+    <div class="sidebar">
+        <h2>CURSOS</h2>
+    </div>
+    <div class="content">
+        <h2>Cursos</h2>
+        <div class="courses">
+            <div class="course">
+                <h3>Inglés Básico 2</h3>
+                <p>68%</p>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 68%;"></div>
+                </div>
+            </div>
+            <div class="course">
+                <h3>Alemán Intermedio 2</h3>
+                <p>36%</p>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 36%;"></div>
+                </div>
+            </div>
+            <div class="course">
+                <h3>Francés Avanzado 1</h3>
+                <p>91%</p>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 91%;"></div>
+                </div>
+            </div>
+            <div class="course">
+                <h3>Mandarín Básico 1</h3>
+                <p>20%</p>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 20%;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
