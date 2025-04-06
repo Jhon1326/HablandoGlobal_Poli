@@ -6,7 +6,6 @@ body {
 }
 
 .sidebar {
-    display: grid;
     width: 10%;
     background-color: #2E5743;
     padding: 20px;
