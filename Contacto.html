@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Configuración básica del documento -->
+    <meta charset="UTF-8"> <!-- Codificación de caracteres -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Hacer la página responsive -->
+    <title>Contacto - Hablando Global</title> <!-- Título de la página -->
+
+    <!-- Enlace al archivo CSS para los estilos -->
+    <link rel="stylesheet" href="css/estilos_contaco.css">
+</head>
+<body>
+    <!-- Encabezado de la página -->
+    <div class="header">
+        <!-- Logo y nombre del sitio -->
+        <a href="index.html" class="logo-container">
+            <img src="images/logo.png" alt="Hablando Global Logo" class="logo-img"> <!-- Logo del sitio -->
+            <span class="logo-text">Hablando Global.</span> <!-- Texto del logo -->
+        </a>
+
+        <!-- Menú de navegación -->
+        <nav>
+            <a href="index.html">Home</a> <!-- Enlace a la página principal -->
+            <a href="#">Cursos</a> <!-- Enlace a la sección de cursos -->
+            <a href="login.html">Inicio / Registro</a> <!-- Enlace a la página de inicio de sesión -->
+        </nav>
+    </div>
+
+    <!-- Contenedor principal -->
+    <div class="container">
+        <!-- Información de contacto -->
+        <div class="contact-info">
+            <h2>Contactenos</h2> <!-- Título de la sección -->
+            <h1>Tramite tus Ideas</h1> <!-- Subtítulo -->
+            <p>Póngase en contacto con nosotros para preguntas, asistencia técnica u oportunidades de colaboración a través de la información de contacto facilitada.</p>
+            <p><strong>Teléfono:</strong> +57 3103682518</p> <!-- Información de contacto: Teléfono -->
+            <p><strong>Email:</strong> contacto@hablandoglobal.com</p> <!-- Información de contacto: Email -->
+            <p><strong>Dirección:</strong> 123 Bogotá ST</p> <!-- Información de contacto: Dirección -->
+        </div>
+
+        <!-- Formulario de contacto -->
+        <div class="contact-form">
+            <h2>Formulario de Contacto</h2> <!-- Título del formulario -->
+            <form action="#"> <!-- Acción del formulario (actualmente no funcional) -->
+                <!-- Campo para el nombre -->
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+
+                <!-- Campo para el correo -->
+                <label for="correo">Correo:</label>
+                <input type="email" id="correo" name="correo" placeholder="Tu correo" required>
+
+                <!-- Campo para el número de celular -->
+                <label for="celular">Número Celular:</label>
+                <input type="tel" id="celular" name="celular" placeholder="+57 310 0000" required>
+
+                <!-- Campo para el asunto -->
+                <label for="asunto">Asunto:</label>
+                <input type="text" id="asunto" name="asunto" placeholder="Tu Asunto" required>
+
+                <!-- Campo para el mensaje -->
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje" rows="5" required></textarea>
+
+                <!-- Botón para enviar el formulario -->
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Pie de página -->
+    <div class="footer">
+        &copy; 2025 Hablando Global - Todos los derechos reservados. <!-- Derechos reservados -->
+    </div>
+</body>
+</html>
