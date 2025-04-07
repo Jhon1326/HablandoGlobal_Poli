@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+}
+.header {
+    background-color: #174e3d;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header img {
+    height: 100px; /* Tamaño del logo */
+    width: auto;  /* Mantener proporción */
+    display: inline-block; /* Asegura que el logo no ocupe todo el ancho */
+    margin: 0; /* Elimina el centrado */
+}
+.header nav a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+.header nav a:hover {
+    text-decoration: underline;
+}
+.logo-container {
+    display: flex;
+    align-items: center; /* Alinea verticalmente el logo y el texto */
+    text-decoration: none; /* Elimina el subrayado del enlace */
+}
+
+.logo-img {
+    height: 80px; /* Tamaño del logo */
+    width: auto; /* Mantener proporción */
+    margin-right: 10px; /* Espacio entre el logo y el texto */
+}
+
+.logo-text {
+    font-size: 24px; /* Tamaño del texto */
+    font-weight: bold; /* Negrita para el texto */
+    color: white; /* Color del texto */
+}
+.container {
+    display: flex;
+    padding: 20px;
+}
+.contact-info, .contact-form {
+    flex: 1;
+    margin: 10px;
+}
+.contact-info h2 {
+    font-size: 1.5em;
+}
+.contact-info p {
+    margin: 5px 0;
+}
+.contact-info p:nth-child(4),
+.contact-info p:nth-child(5),
+.contact-info p:nth-child(6) {
+    margin-top: 30px; /* Ajusta este valor según sea necesario */
+}
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+.contact-form input, .contact-form textarea {
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 1em;
+}
+.contact-form button {
+    padding: 10px 20px;
+    background-color: #174e3d;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.contact-form button:hover {
+    background-color: #174e3d;
+}
+.footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #174e3d;
+    color: white;
+}
