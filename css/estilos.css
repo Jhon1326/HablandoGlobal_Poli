@@ -471,3 +471,260 @@ footer {
   font-size: 0.85em;
 }
 
+/* Estilos para los enlaces en el pie de página */
+.footer a {
+	color: white;
+	text-decoration: none;
+	transition: color 0.3s ease;
+}
+
+.footer a:hover {
+	color: #ddd; /* un blanco más suave al pasar el mouse */
+}
+
+/* ========== ESTRUCTURA GENERAL ========== */
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Contenedor general */
+.wrapper {
+  flex: 1;
+  display: flex;
+  min-height: 100vh;
+}
+
+/* SIDEBAR */
+.sidebar {
+  width: 80px;
+  background-color: #174e3d; 
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1em 0;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.sidebar-logo img {
+  width: 70px; 
+  margin-bottom: 2em;
+}
+
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+  margin-top: 2em;
+}
+
+.nav-btn {
+  background: none;
+  border: none;
+  color: #bbb;
+  font-size: 1.4em;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.nav-btn:hover {
+  color: white;
+}
+
+.nav-btn.active {
+  color: #00d6b3;
+  position: relative;
+}
+
+.nav-btn.active::before {
+  content: '';
+  position: absolute;
+  left: -10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 4px;
+  height: 20px;
+  background-color: #00d6b3;
+  border-radius: 2px;
+}
+
+/* ========== CONTENIDO PRINCIPAL ========== */
+
+.main {
+  margin-left: 80px; /* espacio para el sidebar */
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: #f3f9f8;
+}
+
+.main h1 {
+  font-size: 1.8em;
+  margin-bottom: 1em;
+  color: #174e3d;
+}
+
+.perfil {
+  width: 200px; /* Aumenta el tamaño */
+  margin: 0 auto 2em auto; /* Centra horizontalmente y mantiene el margen inferior */
+  display: block; /* Necesario para centrar imágenes si usas <img> */
+}
+
+
+/* Área que ocupa el contenido real */
+.contenido {
+  flex: 1;
+  padding: 2em;
+  text-align: center;
+}
+
+/* ========== CARDS DE CURSOS ========== */
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px 0;
+}
+
+
+
+.card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: calc(25% - 20px);
+  min-width: 220px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.image-placeholder {
+  background-color: #d9d9d9;
+  height: 100px;
+  border-radius: 4px;
+}
+
+.info {
+  padding: 10px;
+}
+
+.progress-bar {
+  height: 6px;
+  background-color: #e0e0e0;
+  border-radius: 3px;
+  margin: 5px 0;
+}
+
+.progress {
+  height: 100%;
+  background-color: #4caf50;
+  border-radius: 3px;
+}
+
+/* ========== FOOTER ========== */
+
+footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 1em;
+}
+
+/*INFORMACION PERFIL*/
+
+.perfil {
+  display: flex;
+  align-items: center;
+  gap: 2em;
+  padding: 2em;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.perfil-foto {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.perfil-info p {
+  margin: 0.5em 0;
+  font-size: 1.1em;
+}
+
+/** Tabla estudiante*/
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  padding: 2em;
+}
+
+.table-container {
+  max-width: 1000px;
+  margin: auto;
+  overflow-x: auto;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  padding: 1em;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+thead {
+  background-color: #343a40;
+  color: white;
+}
+
+th, td {
+  padding: 0.8em;
+  border: 1px solid #ddd;
+}
+
+.perfil {
+  width: 80px;
+  margin: 0 auto;
+  display: block;
+}
+
+.edit {
+  background-color: #ffc107;
+  border: none;
+  padding: 0.5em;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.delete {
+  background-color: #dc3545;
+  border: none;
+  padding: 0.5em;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+button:hover {
+  opacity: 0.8;
+}
